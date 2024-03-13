@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FAQ.css">
+    <title>FAQ - Dúvidas Frequentes</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navigation">
+            <a class="home" href="#">Home</a>
+            <a class="questions" href="#">Dúvidas</a>
+            <img class="logotipo" src="./img/logotipo_teste.png" width="200px">
+            <a class="work" href="cadastro_adm.html">Quer trabalhar conosco?</a>
+            <a class="login" href="login.html">Login</a>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <h1>Perguntas Frequentes</h1>
+        <div class="faq-item">
+            <div class="question">Como faço para me cadastrar?</div>
+            <div class="answer">Para se cadastrar, clique no link "Login" no canto superior direito da página e preencha o formulário com suas informações pessoais.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">Posso alterar minhas informações de perfil?</div>
+            <div class="answer">Sim, após fazer login, vá para a página de perfil e clique no botão "Editar perfil". Você poderá atualizar suas informações lá.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">Como faço para selecionar meu tipo de cabelo?</div>
+            <div class="answer">Na página home, será mostrado as opções principais que você pode escolher,
+            logo após a escolha, basta fazer o cadastro para definir suas preferências
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question">Como entro em contato em caso de dúvidas?</div>
+            <div class="answer">Você pode entrar em contato enviando um email para HairGo@contato.com</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+                answer.style.display = answer.classList.contains('active') ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>

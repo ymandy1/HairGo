@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --color-light-50: #f8fafc;
+    --color-dark-100: #797984;
+    --color-dark-900: #000;
+
+    --color-purple-50: #775a80;
+    --color-purple-100: #781dcd;
+    --color-purple-200: #c162d9;
+
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100, var(--color-purple-200)))
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 110vh;
+    width: 100%;
+    background: #fcfaf9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(119, 90, 128, 1) 50%, rgba(102, 69, 252, 1) 100%)
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    height: 100px;
+}
+
+
+
+a.home:hover, a.questions:hover, a.work:hover, a.login:hover {
+    color: #654272;
+}
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+.logotipo {
+    width: 300px;
+    margin-left: 150px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+
+#login_form {
+    background-color: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    border: 1px solid #b5a2bb;
+    border-radius: 30px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height:fit-content;
+    animation: dark-to-light 0.3s ease-in-out;
+    
+}
+
+#form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #775a80;
+    font-family: "Nunito", sans-serif;
+    font: bolder;
+}
+
+#form_header h1 {
+    font-size: 38px;
+    text-align: center;
+}
+
+#mode_icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 75px;
+}
+
+#social-media img {
+    width: 35px;
+}
+
+#social-media img:hover {
+    transform: scale(1.2);
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-box label {
+    font-size: 14px;
+    color: var(--color-dark-100)
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-purple-50);
+}
+
+.input-field i {
+    font-size: 18px;
+    color: var(--color-dark-900)
+}
+
+.input-field input {
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.input-field input:focus {
+    outline: none;
+
+}
+
+#forgot_password a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-dark-100)
+}
+
+#forgot_password a:hover {
+    color: var(--color-purple-50)
+}
+
+#login_button {
+    border: none;
+    background: #775a80;
+    color: var(--color-light-50);
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 300px;
+
+}
+
+#login_button:hover {
+    transform: scale(1.05);
+}
+
+#login_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#login_button a {
+    text-decoration: none;
+    color: white;
+}
+
+#mode-icon {
+    cursor: pointer;
+}
+
+#sign_up a {
+    text-decoration: none;
+    color: var(--color-dark-100);
+}
+
+.dark#login_form {
+    color: white;
+    background-color: #312d37;
+    animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#login_form h1 {
+    color: white;
+}
+
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+    color: white;
+}
+
+.dark#input-box label {
+    color: white;
+}
+
+
+
+
+@keyframes dark-to-light {
+
+    0% {
+        background-color: var(--color-dark-100);
+    }
+
+    100% {
+        background-color: var(--color-light-50);
+    }
+
+}
+
+@keyframes light-to-dark {
+
+    0% {
+        background-color: var(--color-light-50);
+    }
+
+    100% {
+        background-color: var(--color-dark-100);
+    }
+
+}

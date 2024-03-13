@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+    --color-light-50: #f8fafc;
+    --color-dark-100: #797984;
+    --color-dark-900: #000;
+
+    --color-purple-50: #6139a5;
+    --color-purple-100: #781dcd;
+    --color-purple-200: #c162d9;
+
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100, var(--color-purple-200)))
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+#login_form {
+    background-color: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 55px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+    position: absolute;
+    
+}
+
+#form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#000000;
+   
+
+
+}
+#form_header h1 {
+    font-size: 40px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    right: 55%;
+    top: 35px;
+
+}
+#form_header h1::before {
+    position: absolute;
+    content: '';
+    background-color: var(--color-purple-50);
+    height: 3px;
+    width: 140px;
+    bottom: 10px;
+    border-radius: 3px;
+    align-items: center
+}
+#text_center h2 {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+}
+#text h2 {
+    font-size: 20px;
+    color: rgb(53, 6, 109);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height:65px;
+}
+
+
+#login_button {
+    border: none;
+    background: var(--color-gradient);
+    color: var(--color-light-50);
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 270px;
+}
+
+#login_button:hover {
+    transform: scale(1.05);
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    background: rgb(207, 180, 221);
+    padding: 16px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #1f1e1e;
+    cursor: pointer;
+    width: 270px;
+}
+#inputs:hover {
+    transform: scale(1.05);
+    background-color: var(--color-purple-50);
+    color:white;
+}
+
+#services a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-dark-100);
+}
+
+#services a:hover {
+    color: var(--color-purple-50)
+}
+
+#services {
+    position: relative;
+    right: -20px;
+    top: -10px;
+}
+
+#creative_hair {
+   width: 30px;
+   height: auto;
+   float: left;
+   margin-right: 210px;
+   margin-block-end: -26px;
+   margin-top: -4px;
+}
+
+#modern_hair {
+   width: 30px;
+   height: auto;
+   float: left;
+   margin-right: 210px;
+   margin-block-end: -26px;
+   margin-top: -4px;
+}
+
+#other_option {
+   width: 30px;
+   height: auto;
+   float: left;
+   margin-right: 210px;
+   margin-block-end: -26px;
+   margin-top: -4px;
+}
+
+#login_button a {
+    text-decoration: none;
+    color: white;
+}
