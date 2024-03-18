@@ -17,7 +17,7 @@
         <header id="header">
             <nav class="navigation">
                 <a class="home" href="index.html">Home</a>
-                <a class="home" href="#">Contato</a>
+                <a class="home" href="./contato.html">Contato</a>
                 <img class="logotipo" src="../img/logotipo_teste.png" width="200px">
                 <a class="home" href="./cadastro_adm.html">Quer trabalhar conosco?</a>
                 <a class="servicos" href="./login.html">Login</a>
@@ -25,7 +25,7 @@
         </header>
         
 
-        <form id="login_form">
+        <form id="login_form" method="POST">
             <div id="form_header">
                 <h1>Seja um colaborador</h1>
 
@@ -42,7 +42,7 @@
                         Nome
                         <div class="input-field">
                             <i class="fa-solid fa-user" style="color: #8d619b;"></i>
-                            <input type="text" id="name" name="name">
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" required pattern="[A-Za-záàâãéèêíóôõúç\s]{8,50}" title="Nome de 8 a 50 caracteres">
                         </div>
                     </label>
                 </div>
@@ -51,7 +51,7 @@
                         Senha
                         <div class="input-field">
                             <i class="fa-solid fa-key" style="color: #775a80;"></i>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" placeholder="Digite sua senha" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&*]).{6,}$" title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 6 ou mais caracteres.">
                         </div>
                     </label>
                 </div>
@@ -60,7 +60,7 @@
                         E-mail
                         <div class="input-field">
                             <i class="fa-solid fa-envelope" style="color: #775a80;"></i>
-                            <input type="text" id="email" name="email">
+                            <input type="text" id="email" name="email" required placeholder="Insira seu email" pattern="^[\w.]+@([A-Za-z]{3,}.)+[A-Za-z]{2,4}$">
                         </div>
                     </label>
                 </div>
@@ -69,16 +69,16 @@
                         CPF
                         <div class="input-field">
                             <i class="fa-regular fa-id-card" style="color: #775a80;"></i>
-                            <input type="text" id="cpf" name="cpf">
+                            <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF" required pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d){11}$" title="xxx.xxx.xxx-xx \n ou xxxxxxxxxxx">
                         </div>
                     </label>
                 </div>
                 <div class="input-box">
-                    <label for="cpf">
+                    <label for="crc">
                         CRC
                         <div class="input-field">
                             <i class="fa-solid fa-id-card-clip" style="color: #775a80;"></i>
-                            <input type="text" id="crc" name="crc">
+                            <input type="text" id="crc" name="crc" placeholder="Insira seu CRC" required pattern="(^\d{8}-\d{2})|\d{10}" title="xxxxxxxx-xx \n ou xxxxxxxxxx">
                         </div>
                     </label>
                 </div>
@@ -87,25 +87,23 @@
                         Número de Telefone
                         <div class="input-field">
                             <i class="fa-solid fa-phone" style="color: #775a80;"></i>
-                            <input type="text" id="tel" name="tel">
+                            <input type="tel" id="tel" name="tel" required placeholder="Digite seu telefone" pattern="^\(\d{2}\)\d{5}\-\d{4}" title="(xx)xxxxx-xxxx">
                         </div>
                     </label>
                 </div>
-                <button type="submit" id="login_button" onclick="exibirPrompt()">
-                    <a href="página2.html">
-                        Login
-                    </a>
+                <button type="submit" id="login_button">
+                    Cadastrar
                 </button>
 
                 <div id="sign_up">
                     <a href="login.html">
-                        Faça seu login
+                        Já tem uma conta? Faça seu login
                     </a>
                 </div>
         </form>
     </main>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="../javascript/cadastro_adm.js"> </script>
 
 </body>
 
