@@ -10,6 +10,11 @@
     scroll-behavior: smooth;
 }
 
+@font-face{
+    font-family: "Brown Sugar";
+    src: url('..//img/Brown\ Sugar\ .ttf');
+  }
+
 .header {
     background-color: #ffffff;
 }
@@ -22,7 +27,12 @@
 
 .nav-list {
     display: flex;
+    top: 12px;
+    right: 50px;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    margin: 0;
     list-style: none;
     padding: 20px;
 }
@@ -49,6 +59,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.Logo{
+    text-decoration: none;
+    font-family: 'Brown Sugar';
+    color:#4d2261;
+    font-size: 45px;
+}
+
 .toggle-container {
     float: right;
     position: absolute;
@@ -60,7 +77,6 @@
 #toggle-btn {
     background-color: transparent;
     border: none;
-
     color: #333;
     font-size: 24px;
     cursor: pointer;
@@ -184,6 +200,13 @@ h2{
     height: auto;
 }
 
+.slick-prev::before,
+.slick-next::before {
+    color: rgb(108, 66, 136)!important;
+    opacity: 1!important;
+ 
+}
+
 .features-hero-title{
     font-size: 50px;
     color: white;
@@ -223,6 +246,12 @@ h2{
     background-color: #765983;
     border-radius: 30px;
     padding: 20px 10px;
+}
+
+.image-wrapper img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
 }
 
 .image-wrapper:last-child {
