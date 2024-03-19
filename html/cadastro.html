@@ -25,7 +25,7 @@
         </header>
         
 
-        <form id="login_form" method="POST">
+        <form id="login_form" method="get" action="telaPreferencias.html">
             <div id="form_header">
                 <h1>Faça seu Cadastro</h1>
 
@@ -42,7 +42,7 @@
                         Nome
                         <div class="input-field">
                             <i class="fa-solid fa-user" style="color: #8d619b;"></i>
-                            <input type="text" id="name" name="name" required pattern="[A-Za-záàâãéèêíóôõúç\s]{8,50}" title="Nome de 8 a 50 caracteres">
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome" pattern="[A-Za-záàâãéèêíóôõúç\s]{8,50}" title="Nome de 8 a 50 caracteres">
                         </div>
                     </label>
                 </div>
@@ -51,7 +51,7 @@
                         Senha
                         <div class="input-field">
                             <i class="fa-solid fa-key" style="color: #775a80;"></i>
-                            <input type="password" id="password" required name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&*]).{6,}$" title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 6 ou mais caracteres.">
+                            <input type="password" id="password" placeholder="Digite sua senha" required name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&*]).{6,}$" title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 6 ou mais caracteres.">
                         </div>
                     </label>
                 </div>
@@ -60,7 +60,7 @@
                         E-mail
                         <div class="input-field">
                             <i class="fa-solid fa-envelope" style="color: #775a80;"></i>
-                            <input type="text" id="email" name="email" required pattern="^[\w.]+@([A-Za-z]{3,}.)+[A-Za-z]{2,4}$">
+                            <input type="text" id="email" name="email" placeholder="Digite seu email" required pattern="^[\w.]+@([A-Za-z]{3,}.)+[A-Za-z]{2,4}$">
                         </div>
                     </label>
                 </div>
@@ -69,14 +69,17 @@
                         Número de Telefone
                         <div class="input-field">
                             <i class="fa-solid fa-phone" style="color: #775a80;"></i>
-                            <input type="text" id="telefone" name="telefone" required pattern="^\(\d{2}\)(\d{5}[-]\d{4})" title="não é um telefone válido \nO formato é: (xx)xxxxx-xxxx">
+                            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required pattern="^\(\d{2}\)(\d{5}[-]\d{4})" title="não é um telefone válido \nO formato é: (xx)xxxxx-xxxx">
                         </div>
                     </label>
                 </div>
                 <button type="submit" id="login_button">
-                    <a href="telaPreferencias.html">
+                    <!-- <a href="telaPreferencias.html">
                         Cadastrar
-                    </a>
+                    </a> -->
+                    
+                    Cadastrar
+
                 </button>
 
                 <div id="sign_up">
