@@ -61,7 +61,7 @@
                         Senha
                         <div class="input-field">
                             <i class="fa-solid fa-key" style="color: #775a80;"></i>
-                            <input type="password" id="password" placeholder="Digite sua senha" required name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&*]).{6,}$" title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 6 ou mais caracteres.">
+                            <input type="password" id="password" placeholder="Digite sua senha" required name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{6,}$" title="Deve conter pelo menos um número e uma letra maiúscula e minúscula, pelo menos 6 ou mais caracteres e um caracter especial.">
                         </div>
                     </label>
                 </div>
@@ -79,7 +79,7 @@
                         Número de Telefone
                         <div class="input-field">
                             <i class="fa-solid fa-phone" style="color: #775a80;"></i>
-                            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required pattern="^\(\d{2}\)(\d{5}[-]\d{4})" title="não é um telefone válido \nO formato é: (xx)xxxxx-xxxx">
+                            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required pattern="^\(\d{2}\)\d{5}-+\d{4}$" title="não é um telefone válido \nO formato é: (xx)xxxxx-xxxx">
                         </div>
                     </label>
                 </div>
