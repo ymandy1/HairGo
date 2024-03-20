@@ -229,29 +229,86 @@ a.home:hover, a.servicos:hover, a.contato:hover {
     color: white;
 }
 
-
-
-
-@keyframes dark-to-light {
-
-    0% {
-        background-color: var(--color-dark-100);
-    }
-
-    100% {
-        background-color: var(--color-light-50);
-    }
+/* **********toggle************* */
+.toggle-container {
+    display: ;
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 20px;
 
 }
 
-@keyframes light-to-dark {
-
-    0% {
-        background-color: var(--color-light-50);
-    }
-
-    100% {
-        background-color: var(--color-dark-100);
-    }
-
+#toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
+
+#toggle-btn:hover {
+    color: #777;
+}
+
+.toggle-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-options a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.toggle-options a:hover {
+    color: #777;
+}
+
+#toggle-btn{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #header {
+      display: none;
+    }
+
+    .logo {
+        font-size: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #login_form {
+        margin: 20% 0;
+        padding: 10px 20px;
+    }
+
+    #toggle-btn{
+        display: block;
+    }
+    
+    .show{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #login_form {
+        margin-top: 20%;
+        padding: 1px 10px;
+    }
+}
+

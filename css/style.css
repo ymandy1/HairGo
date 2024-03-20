@@ -320,3 +320,21 @@ h1 {
     text-align: center;
     padding: 20px 0;
 }
+
+/* ********media query tablet & mobile********* */
+
+@media screen and (max-width: 1100px) {
+    .image-gallery {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .image-wrapper {
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+}

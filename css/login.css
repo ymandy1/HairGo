@@ -14,6 +14,12 @@
     --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100, var(--color-purple-200)))
 }
 
+@font-face {
+    font-family: "Brown Sugar";
+    src: url('..//img/Brown\ Sugar\ .ttf');
+}
+
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -38,32 +44,28 @@
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 20px;
     height: 100px;
 }
-
-
 
 a.home:hover, a.questions:hover, a.work:hover, a.login:hover {
     color: #654272;
 }
 
-
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100%; 
+    justify-content: space-between;
+    margin: 20px;
+    width: 100%;
 }
 
-.navigation a{
+.navigation a {
     color: white;
     text-decoration: none;
 }
 
-.logotipo {
-    width: 300px;
-    margin-left: 150px;
+.logo {
+    margin-left: 135px
 }
 
 .navigation a {
@@ -83,9 +85,9 @@ a.home:hover, a.questions:hover, a.work:hover, a.login:hover {
     border-radius: 30px;
     gap: 30px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
-    height:fit-content;
+    height: fit-content;
     animation: dark-to-light 0.3s ease-in-out;
-    
+
 }
 
 #form_header {
@@ -231,29 +233,88 @@ a.home:hover, a.questions:hover, a.work:hover, a.login:hover {
     color: white;
 }
 
+/* ****toggle******* */
 
-
-
-@keyframes dark-to-light {
-
-    0% {
-        background-color: var(--color-dark-100);
-    }
-
-    100% {
-        background-color: var(--color-light-50);
-    }
+.toggle-container {
+    display: ;
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 20px;
 
 }
 
-@keyframes light-to-dark {
+#toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
 
-    0% {
-        background-color: var(--color-light-50);
+#toggle-btn:hover {
+    color: #777;
+}
+
+.toggle-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-options a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.toggle-options a:hover {
+    color: #777;
+}
+
+#toggle-btn{
+    display: none;
+}
+
+
+/* ************RESPONSIVIDADE PAGINA LOGIN*************** */
+
+@media screen and (max-width: 768px) {
+
+    #container {
+        
     }
 
-    100% {
-        background-color: var(--color-dark-100);
+    #header {
+      display: none;
     }
+
+    .logo {
+        font-size: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #login_form {
+        margin: 20% 0;
+    }
+
+    #toggle-btn{
+        display: block;
+    }
+    
+    .show{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
 
 }
