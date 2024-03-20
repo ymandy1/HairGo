@@ -231,7 +231,6 @@ a.home:hover, a.servicos:hover, a.contato:hover {
 
 /* **********toggle************* */
 .toggle-container {
-    display: ;
     float: right;
     position: absolute;
     top: 30px;

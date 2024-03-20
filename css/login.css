@@ -236,7 +236,6 @@ a.home:hover, a.questions:hover, a.work:hover, a.login:hover {
 /* ****toggle******* */
 
 .toggle-container {
-    display: ;
     float: right;
     position: absolute;
     top: 30px;
@@ -288,10 +287,6 @@ a.home:hover, a.questions:hover, a.work:hover, a.login:hover {
 
 @media screen and (max-width: 768px) {
 
-    #container {
-        
-    }
-
     #header {
       display: none;
     }
@@ -313,8 +308,4 @@ a.home:hover, a.questions:hover, a.work:hover, a.login:hover {
     .show{
         display: block;
     }
-}
-
-@media screen and (max-width: 480px) {
-
 }
